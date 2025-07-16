@@ -1,0 +1,251 @@
+#CONFIG GET *
+
+  1) "dbfilename"
+  2) "dump.rdb"
+  3) "requirepass"
+  4) ""
+  5) "masterauth"
+  6) ""
+  7) "unixsocket"
+  8) ""
+  9) "logfile"
+ 10) "/var/log/redis/redis.log"
+ 11) "pidfile"
+ 12) "/var/run/redis/redis.pid"
+ 13) "slave-announce-ip"
+ 14) ""
+ 15) "maxmemory"
+ 16) "0"
+ 17) "maxmemory-samples"
+ 18) "5"
+ 19) "timeout"
+ 20) "0"
+ 21) "auto-aof-rewrite-percentage"
+ 22) "100"
+ 23) "auto-aof-rewrite-min-size"
+ 24) "67108864"
+ 25) "hash-max-ziplist-entries"
+ 26) "512"
+ 27) "hash-max-ziplist-value"
+ 28) "64"
+ 29) "list-max-ziplist-size"
+ 30) "-2"
+ 31) "list-compress-depth"
+ 32) "0"
+ 33) "set-max-intset-entries"
+ 34) "512"
+ 35) "zset-max-ziplist-entries"
+ 36) "128"
+ 37) "zset-max-ziplist-value"
+ 38) "64"
+ 39) "hll-sparse-max-bytes"
+ 40) "3000"
+ 41) "lua-time-limit"
+ 42) "5000"
+ 43) "slowlog-log-slower-than"
+ 44) "10000"
+ 45) "latency-monitor-threshold"
+ 46) "0"
+ 47) "slowlog-max-len"
+ 48) "128"
+ 49) "port"
+ 50) "6379"
+ 51) "tcp-backlog"
+ 52) "511"
+ 53) "databases"
+ 54) "16"
+ 55) "repl-ping-slave-period"
+ 56) "10"
+ 57) "repl-timeout"
+ 58) "60"
+ 59) "repl-backlog-size"
+ 60) "1048576"
+ 61) "repl-backlog-ttl"
+ 62) "3600"
+ 63) "maxclients"
+ 64) "10000"
+ 65) "watchdog-period"
+ 66) "0"
+ 67) "slave-priority"
+ 68) "100"
+ 69) "slave-announce-port"
+ 70) "0"
+ 71) "min-slaves-to-write"
+ 72) "0"
+ 73) "min-slaves-max-lag"
+ 74) "10"
+ 75) "hz"
+ 76) "10"
+ 77) "cluster-node-timeout"
+ 78) "15000"
+ 79) "cluster-migration-barrier"
+ 80) "1"
+ 81) "cluster-slave-validity-factor"
+ 82) "10"
+ 83) "repl-diskless-sync-delay"
+ 84) "5"
+ 85) "tcp-keepalive"
+ 86) "300"
+ 87) "cluster-require-full-coverage"
+ 88) "yes"
+ 89) "no-appendfsync-on-rewrite"
+ 90) "no"
+ 91) "slave-serve-stale-data"
+ 92) "yes"
+ 93) "slave-read-only"
+ 94) "yes"
+ 95) "stop-writes-on-bgsave-error"
+ 96) "yes"
+ 97) "daemonize"
+ 98) "yes"
+ 99) "rdbcompression"
+100) "yes"
+101) "rdbchecksum"
+102) "yes"
+103) "activerehashing"
+104) "yes"
+105) "protected-mode"
+106) "no"
+107) "repl-disable-tcp-nodelay"
+108) "no"
+109) "repl-diskless-sync"
+110) "no"
+111) "aof-rewrite-incremental-fsync"
+112) "yes"
+113) "aof-load-truncated"
+114) "yes"
+115) "maxmemory-policy"
+116) "noeviction"
+117) "loglevel"
+118) "notice"
+119) "supervised"
+120) "no"
+121) "appendfsync"
+122) "everysec"
+123) "syslog-facility"
+124) "local0"
+125) "appendonly"
+126) "no"
+127) "dir"
+128) "/var/lib/redis"
+129) "save"
+130) "900 1 300 10 60 10000"
+131) "client-output-buffer-limit"
+132) "normal 0 0 0 slave 268435456 67108864 60 pubsub 33554432 8388608 60"
+133) "unixsocketperm"
+134) "0"
+135) "slaveof"
+136) ""
+137) "notify-keyspace-events"
+138) ""
+139) "bind"
+140) ""
+
+#INFO
+
+# Server
+redis_version:3.2.12
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:f0eb22ef0ed8848d
+redis_mode:standalone
+os:Linux 2.6.32-573.el6.x86_64 x86_64
+arch_bits:64
+multiplexing_api:epoll
+gcc_version:4.4.7
+process_id:1639
+run_id:32f6ccc487c98c048afe356397bb4796fc6635a1
+tcp_port:6379
+uptime_in_seconds:64244831
+uptime_in_days:743
+hz:10
+lru_clock:707640
+executable:/usr/bin/redis-server
+config_file:/etc/redis.conf
+
+# Clients
+connected_clients:3
+client_longest_output_list:0
+client_biggest_input_buf:0
+blocked_clients:0
+
+# Memory
+used_memory:1364840568
+used_memory_human:1.27G
+used_memory_rss:1616752640
+used_memory_rss_human:1.51G
+used_memory_peak:2026112512
+used_memory_peak_human:1.89G
+total_system_memory:16494424064
+total_system_memory_human:15.36G
+used_memory_lua:37888
+used_memory_lua_human:37.00K
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+mem_fragmentation_ratio:1.18
+mem_allocator:jemalloc-3.6.0
+
+# Persistence
+loading:0
+rdb_changes_since_last_save:204
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1678429212
+rdb_last_bgsave_status:ok
+rdb_last_bgsave_time_sec:11
+rdb_current_bgsave_time_sec:-1
+aof_enabled:0
+aof_rewrite_in_progress:0
+aof_rewrite_scheduled:0
+aof_last_rewrite_time_sec:-1
+aof_current_rewrite_time_sec:-1
+aof_last_bgrewrite_status:ok
+aof_last_write_status:ok
+
+# Stats
+total_connections_received:2325085863
+total_commands_processed:7368837124
+instantaneous_ops_per_sec:15
+total_net_input_bytes:10112275096090
+total_net_output_bytes:3772768278379
+instantaneous_input_kbps:9.43
+instantaneous_output_kbps:1.92
+rejected_connections:0
+sync_full:0
+sync_partial_ok:0
+sync_partial_err:0
+expired_keys:985495514
+evicted_keys:0
+keyspace_hits:1065179404
+keyspace_misses:988178295
+pubsub_channels:0
+pubsub_patterns:0
+latest_fork_usec:345923
+migrate_cached_sockets:0
+
+# Replication
+role:master
+connected_slaves:0
+master_repl_offset:0
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+
+# CPU
+used_cpu_sys:646027.62
+used_cpu_user:294713.28
+used_cpu_sys_children:564196.38
+used_cpu_user_children:3945750.00
+
+# Cluster
+cluster_enabled:0
+
+# Keyspace
+db0:keys=2867498,expires=92450,avg_ttl=2521181238
+db2:keys=2,expires=1,avg_ttl=71400
+db3:keys=5100,expires=5100,avg_ttl=356279005681927
+db4:keys=4476,expires=4476,avg_ttl=359816540329137
+db5:keys=3635,expires=3635,avg_ttl=359968425913630
+db6:keys=5732,expires=5732,avg_ttl=359831094945136
+db7:keys=1191532,expires=12,avg_ttl=5856948
